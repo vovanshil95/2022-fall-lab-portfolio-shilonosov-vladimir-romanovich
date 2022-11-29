@@ -16,7 +16,7 @@
     <title>Responsive Portfolio Website</title>
 </head>
 <body>
-    <!-- header -->
+
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo"> Vladimir</a>
@@ -24,7 +24,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
+                        <a href="#home" class="nav__link active-link">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
@@ -126,11 +126,11 @@
                 <img src="assets/img/about.jpg" alt="" class="about__img">
                 <div class="about__data">
                     <p class="about__description">Hello,I don't have much expirience in ds 
-                        but i have a few projects</p>
+                        but I have a few projects</p>
                 </div>
 
                 <div class="about__buttons">
-                    <a download="" href="assets/pdf/Vladimir-Cv.pdf" class="button button--flex">
+                    <a href="assets/pdf/Vladimir-Cv.pdf" class="button button--flex" download>
                         Download CV<i class="uil uil-download-alt button__icon"></i>
                     </a>
                 </div>
@@ -325,7 +325,7 @@
 
         <section class="services section" id="services">
             <h2 class="section__title">Services</h2>
-            <span class="section__subtitle">What i offer</span>
+            <span class="section__subtitle">What I offer</span>
 
             <div class="services__container container grid">
                 <div class="services__content">
@@ -457,6 +457,103 @@
             </div>
 
         </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get ni touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+
+                        <div>
+                            <h3 class="contac__title">Call Me</h3>
+                            <span class="contact__subtitle">+79148909915</span>
+                        </div>
+                    </div>
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contac__title">Email</h3>
+                            <span class="contact__subtitle">vovanshil95@mail.ru</span>
+                        </div>
+                    </div>
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+
+                        <div>
+                            <h3 class="contac__title">Location</h3>
+                            <span class="contact__subtitle">Russia - Saint Petersburg Av. Kronverkskiy #49</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email</label>
+                            <input type="email" class="contact__input">
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Meassage</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
+
+                    <div>
+                        <a href="#" class="button button--flex">
+                            Send Message
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Vladimir</h1>
+                        <span class="footer__subtitle">Data Scientist</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#services" class="footer__link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contactme</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://t.me/VladimirShil" target="_blank" class="footer__social">
+                            <i class="uil uil-telegram-alt"></i>
+                        </a>
+
+                        <a href="https://vk.com/vladimirshil" target="_blank" class="footer__social">
+                            <i class="uil uil-vk"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/@vladim1r" target="_blank" class="footer__social">
+                            <i class="uil uil-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
     <script src="assets/js/swiper-bundle.min.js"></script>  
