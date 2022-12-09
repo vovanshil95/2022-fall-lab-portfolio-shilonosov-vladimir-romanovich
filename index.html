@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +16,7 @@
 
     <title>Responsive Portfolio Website</title>
 </head>
+
 <body>
 
     <header class="header" id="header">
@@ -58,6 +60,8 @@
             </div>
 
             <div class="nav__btns">
+
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -71,7 +75,8 @@
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
-                        <a href="https://www.linkedin.com/in/vladimir-shilonosov-aa6335258/" target="_blank" class="home__social-icon">
+                        <a href="https://www.linkedin.com/in/vladimir-shilonosov-aa6335258/" target="_blank"
+                            class="home__social-icon">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
                         <a href="https://www.kaggle.com/shilonosovvladimir" target="_blank" class="home__social-icon">
@@ -84,25 +89,26 @@
                     <div class="home__img">
                         <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                             <mask id="mask0" mask-type="alpha">
-                            <path d="M68.6,-33.4C82.4,-15.8,82.4,15.9,68.7,38.6C55,61.2,27.5,
+                                <path d="M68.6,-33.4C82.4,-15.8,82.4,15.9,68.7,38.6C55,61.2,27.5,
                             74.8,2.4,73.4C-22.6,72,-45.2,55.6,-50.8,37.6C-56.4,19.7,-44.9,0.2,-33.6,-16C-22.3,
-                            -32.1,-11.2,-44.9,8.1,-49.6C27.4,-54.3,54.9,-50.9,68.6,-33.4Z" 
-                            transform="translate(100 100)" />
+                            -32.1,-11.2,-44.9,8.1,-49.6C27.4,-54.3,54.9,-50.9,68.6,-33.4Z"
+                                    transform="translate(100 100)" />
                             </mask>
                             <g mask="url(#mask0)">
                                 <path d="M68.6,-33.4C82.4,-15.8,82.4,15.9,68.7,38.6C55,61.2,27.5,
                                 74.8,2.4,73.4C-22.6,72,-45.2,55.6,-50.8,37.6C-56.4,19.7,-44.9,0.2,-33.6,-16C-22.3,
-                                -32.1,-11.2,-44.9,8.1,-49.6C27.4,-54.3,54.9,-50.9,68.6,-33.4Z" 
-                                transform="translate(100 100)" />
+                                -32.1,-11.2,-44.9,8.1,-49.6C27.4,-54.3,54.9,-50.9,68.6,-33.4Z"
+                                    transform="translate(100 100)" />
 
-                                <image class="home__blob-img" x='12' y='18' xlink:href="assets/img/perfil.png"/>
+                                <image class="home__blob-img" x='12' y='18' xlink:href="assets/img/perfil.png" />
                             </g>
-                          </svg>
+                        </svg>
                     </div>
                     <div class="home__data">
                         <h1 class="home__title">Hi I'm Vladimir</h1>
                         <h3 class="home__subtitle">Data Scientist</h3>
-                        <p class="home__description">high level experience in data Science deep learning and python programming</p>
+                        <p class="home__description">high level experience in data Science deep learning and python
+                            programming</p>
                         <a href="#contact" class="button button--flex">
                             Contact Me <i class="uil uil-message button__icon"></i>
                         </a>
@@ -122,18 +128,18 @@
         <section class="about section" id="about">
             <h2 class="section__title">About Me</h2>
             <span class="section__subtitle">My introduction</span>
-            <div class="about__containe container grid">
+            <div class="about__container container grid">
                 <img src="assets/img/about.jpg" alt="" class="about__img">
                 <div class="about__data">
-                    <p class="about__description">Hello,I don't have much expirience in ds 
+                    <p class="about__description">Hello,I don't have much expirience in ds
                         but I have a few projects</p>
+                    <div class="about__buttons">
+                        <a href="assets/pdf/Vladimir-Cv.pdf" class="button button--flex" download>
+                            Download CV<i class="uil uil-download-alt button__icon"></i>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="about__buttons">
-                    <a href="assets/pdf/Vladimir-Cv.pdf" class="button button--flex" download>
-                        Download CV<i class="uil uil-download-alt button__icon"></i>
-                    </a>
-                </div>
             </div>
         </section>
 
@@ -142,120 +148,118 @@
             <span class="section__subtitle">My technical level</span>
 
             <div class="skills__container container grid">
-                <div>
-                    <div class="skills__content skills__open">
-                        <div class="skills__header">
-                            <i class="uil uil-chart-bar skills__icon"></i>
+                <div class="skills__content skills__open">
+                    <div class="skills__header">
+                        <i class="uil uil-chart-bar skills__icon"></i>
 
-                            <div>
-                                <h1 class="skills__title">Data scientist</h1>
-                                <span class="skills__subtitle">6  months experience</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
+                        <div>
+                            <h1 class="skills__title">Data scientist</h1>
+                            <span class="skills__subtitle">6 months experience</span>
                         </div>
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skillls__name">Python</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__python"></span>
-                                </div>
-                            </div>  
 
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skillls__name">Pytorch</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__pytorch"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skillls__name">sklearn </h3>
-                                    <span class="skills__number">70%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__sklearn"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skillls__name">SQL</h3>
-                                    <span class="skills__number">85%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__sql"></span>
-                                </div>
-                            </div>
-
-                            
-                        </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
                     </div>
-
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-brackets-curly skills__icon"></i>
-
-                            <div>
-                                <h1 class="skills__title">Web developer</h1>
-                                <span class="skills__subtitle">more than 1 year experience</span>
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skillls__name">Python</h3>
+                                <span class="skills__number">90%</span>
                             </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__python"></span>
+                            </div>
                         </div>
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skillls__name">Java</h3>
-                                    <span class="skills__number">70%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__java"></span>
-                                </div>
-                            </div>  
 
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skillls__name">Spring</h3>
-                                    <span class="skills__number">60%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__spring"></span>
-                                </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skillls__name">Pytorch</h3>
+                                <span class="skills__number">80%</span>
                             </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skillls__name">Javascript</h3>
-                                    <span class="skills__number">60%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__javascript"></span>
-                                </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__pytorch"></span>
                             </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skillls__name">React</h3>
-                                    <span class="skills__number">50%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__react"></span>
-                                </div>
-                            </div>
-
-                            
                         </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skillls__name">sklearn </h3>
+                                <span class="skills__number">70%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__sklearn"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skillls__name">SQL</h3>
+                                <span class="skills__number">85%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__sql"></span>
+                            </div>
+                        </div>
+
+
                     </div>
-                    
                 </div>
+
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-brackets-curly skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title">Web developer</h1>
+                            <span class="skills__subtitle">more than 1 year experience</span>
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skillls__name">Java</h3>
+                                <span class="skills__number">70%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__java"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skillls__name">Spring</h3>
+                                <span class="skills__number">60%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__spring"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skillls__name">Javascript</h3>
+                                <span class="skills__number">60%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__javascript"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skillls__name">React</h3>
+                                <span class="skills__number">50%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__react"></span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -315,8 +319,8 @@
                     </div>
 
 
-                    </div>
                 </div>
+            </div>
             </div>
 
         </section>
@@ -411,8 +415,9 @@
                         <div class="portfilio__data">
                             <h3 class="portfolio__title">Streaming Service</h3>
                             <p class="portfolio__description">streaming service using machine learning
-                                 to recommend music</p>
-                            <a href="https://www.figma.com/file/iyf07YZYYbTMIfYfEoi9oB/NeoMusic?node-id=123%3A151&t=p8B5YoBMjwvz6yRc-0" class="button button--flex button--small portfolio__button">
+                                to recommend music</p>
+                            <a href="https://www.figma.com/file/iyf07YZYYbTMIfYfEoi9oB/NeoMusic?node-id=123%3A151&t=p8B5YoBMjwvz6yRc-0"
+                                class="button button--flex button--small portfolio__button">
                                 Demo<i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
@@ -423,9 +428,10 @@
 
                         <div class="portfilio__data">
                             <h3 class="portfolio__title">Arrhythmia Detection</h3>
-                            <p class="portfolio__description">Arrhythmia detection based on ECG data 
+                            <p class="portfolio__description">Arrhythmia detection based on ECG data
                                 using a deep neural network</p>
-                            <a href="https://www.kaggle.com/code/shilonosovvladimir/ecg-arrhythmia-detection" class="button button--flex button--small portfolio__button">
+                            <a href="https://www.kaggle.com/code/shilonosovvladimir/ecg-arrhythmia-detection"
+                                class="button button--flex button--small portfolio__button">
                                 Demo<i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
@@ -437,23 +443,24 @@
                         <div class="portfilio__data">
                             <h3 class="portfolio__title">Cool Project</h3>
                             <p class="portfolio__description">There will be something here soon</p>
-                            <a href="https://vk.com/vladimirshil" class="button button--flex button--small portfolio__button">
+                            <a href="https://vk.com/vladimirshil"
+                                class="button button--flex button--small portfolio__button">
                                 Demo<i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
-                    
+
                     </div>
                 </div>
-                
+
                 <div class="swiper-button-next">
                     <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
                 </div>
                 <div class="swiper-button-prev">
                     <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
                 </div>
-                    
+
                 <div class="swiper-pagination"></div>
-                
+
             </div>
 
         </section>
@@ -555,9 +562,13 @@
             </div>
         </footer>
 
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
 
-    <script src="assets/js/swiper-bundle.min.js"></script>  
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
-    <script src="assets/js/main.js"></script>
+        <script src="assets/js/main.js"></script>
 </body>
+
 </html>
