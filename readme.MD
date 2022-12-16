@@ -5,3 +5,4 @@ https://vladimirds.netlify.app/
 - HTML
 - CSS
 - JS
+- eslint

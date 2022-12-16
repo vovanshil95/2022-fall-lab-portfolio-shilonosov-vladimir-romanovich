@@ -249,7 +249,7 @@ img {
   font-size: 1.2rem;
 }
 
-.nav__close {
+.nav__close-button {
   position: absolute;
   right: 1.3rem;
   bottom: .5rem;
@@ -258,19 +258,19 @@ img {
   color: var(--first-color);
 }
 
-.nav__close:hover {
+.nav__close-button:hover {
   color: var(--first-color-alt);
 }
 
-.show-menu {
+.menu--showed {
   bottom: 0;
 }
 
-.active-link {
+.link--active {
   color: var(--first-color);
 }
 
-.scroll-header {
+.header--scrolled {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -375,22 +375,22 @@ img {
   transition: .3s;
 }
 
-.button--flex {
+.flex-button {
   display: inline-flex;
   align-items: center;
 }
 
-.button--small {
+.button--size-small {
   padding: .75rem 1rem;
 }
 
-.button--link {
+.button__link {
   padding: 0;
   background-color: transparent;
   color: var(--first-color);
 }
 
-.button--link:hover {
+.button__link:hover {
   background-color: transparent;
   color: var(--first-color-alt);
 }
@@ -510,17 +510,17 @@ img {
   padding-left: 2.7rem;
 }
 
-.skills__close .skills__list {
+.skills--closed .skills__list {
   height: 0;
   overflow: hidden;
 }
 
-.skills__open .skills__list {
+.skills--opened .skills__list {
   height: max-content;
   margin-bottom: var(--mb-2-5);
 }
 
-.skills__open .skills__arrow {
+.skills--opened .skills__arrow {
   transform: rotate(-180deg);
 }
 
@@ -660,12 +660,12 @@ img {
 }
 
 
-.services__moda-icon {
+.services__modal-icon {
   color: var(--first-color);
   margin-right: var(--mb-0-25);
 }
 
-.active-modal {
+.modal--active {
   opacity: 1;
   visibility: visible;
 }
@@ -747,12 +747,12 @@ img {
 .contact__title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
+  text-decoration: none;
 }
 
-.contact__subritle {
+.contact__subtitle {
   font-size: var(--small-font-size);
-  color: --text-color-light;
-
+  color: var(--text-color-light);
 }
 
 .contact__content {
@@ -785,7 +785,7 @@ img {
   margin-bottom: var(--mb-0-25);
 }
 
-footer__subtitle {
+.footer__subtitle {
   font-size: var(--small-font-size)
 }
 
@@ -816,7 +816,7 @@ footer__subtitle {
   color: rgb(255, 255, 255);
 }
 
-.scrollup {
+.scrollup-button {
   position: fixed;
   right: 1rem;
   bottom: -20%;
@@ -828,16 +828,16 @@ footer__subtitle {
   transition: .4s;
 }
 
-.scrollup:hover {
+.scrollup-button:hover {
   background-color: var(--first-color-alt);
 }
 
-.scrollup__icon {
+.scrollup-button__icon {
   font-size: 1.5rem;
   color: #FFF;
 }
 
-.show-scroll {
+.scroll--showed {
   bottom: 5rem;
 }
 
@@ -969,7 +969,7 @@ footer__subtitle {
   }
 
   .nav__icon,
-  .nav__close,
+  .nav__close-button,
   .nav__toggle {
     display: none;
   }

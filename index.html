@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.ico">
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
@@ -14,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
 
-    <title>Responsive Portfolio Website</title>
+    <title>My Website</title>
 </head>
 
 <body>
@@ -26,7 +27,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
+                        <a href="#home" class="nav__link link--active">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
@@ -56,7 +57,7 @@
                         </a>
                     </li>
                 </ul>
-                <i class="uil uil-times nav__close nav__icon" id="nav-close"></i>
+                <i class="uil uil-times nav__close-button nav__icon" id="nav-close"></i>
             </div>
 
             <div class="nav__btns">
@@ -109,14 +110,14 @@
                         <h3 class="home__subtitle">Data Scientist</h3>
                         <p class="home__description">high level experience in data Science deep learning and python
                             programming</p>
-                        <a href="#contact" class="button button--flex">
+                        <a href="#contact" class="button flex-button">
                             Contact Me <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
                 </div>
 
                 <div class="home__scroll">
-                    <a href="#about" class="home__scroll-button button--flex">
+                    <a href="#about" class="home__scroll-button flex-button">
                         <i class="uil uil-mouse-alt home__scroll-mouse"></i>
                         <span class="home__scroll-name">Scroll down</span>
                         <i class="uil uil-arrow-down home__scroll-arrow"></i>
@@ -134,7 +135,7 @@
                     <p class="about__description">Hello,I don't have much expirience in ds
                         but I have a few projects</p>
                     <div class="about__buttons">
-                        <a href="assets/pdf/Vladimir-Cv.pdf" class="button button--flex" download>
+                        <a href="assets/pdf/Vladimir-Cv.pdf" class="button flex-button" download>
                             Download CV<i class="uil uil-download-alt button__icon"></i>
                         </a>
                     </div>
@@ -148,7 +149,7 @@
             <span class="section__subtitle">My technical level</span>
 
             <div class="skills__container container grid">
-                <div class="skills__content skills__open">
+                <div class="skills__content skills--opened">
                     <div class="skills__header">
                         <i class="uil uil-chart-bar skills__icon"></i>
 
@@ -204,7 +205,7 @@
                     </div>
                 </div>
 
-                <div class="skills__content skills__close">
+                <div class="skills__content skills--closed">
                     <div class="skills__header">
                         <i class="uil uil-brackets-curly skills__icon"></i>
 
@@ -270,11 +271,11 @@
 
             <div class="qualification__container container">
                 <div class="qualification__tabs">
-                    <div class="qualification__button button--flex">
+                    <div class="qualification__button flex-button">
                         <i class="uil uil-graduation-cap qualification__icon"></i>
                         Education
                     </div>
-                    <div class="qualification__button button--flex">
+                    <div class="qualification__button flex-button">
                         <i class="uil uil-briefcase-alt qualification__icon"></i>
                         Work
                     </div>
@@ -337,7 +338,7 @@
                         <i class="uil uil-chart-bar services__icon"></i>
                         <h3 class="services__title">Data <br>Scientist</h3>
                     </div>
-                    <span class="button button--flex button--small button--link services__button">
+                    <span class="button flex-button button--size-small button__link services__button">
                         View More
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
@@ -372,7 +373,7 @@
                         <i class="uil uil-brackets-curly services__icon"></i>
                         <h3 class="services__title">Web <br>Developer</h3>
                     </div>
-                    <span class="button button--flex button--small button--link services__button">
+                    <span class="button flex-button button--size-small button__link services__button">
                         View More
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
@@ -417,7 +418,7 @@
                             <p class="portfolio__description">streaming service using machine learning
                                 to recommend music</p>
                             <a href="https://www.figma.com/file/iyf07YZYYbTMIfYfEoi9oB/NeoMusic?node-id=123%3A151&t=p8B5YoBMjwvz6yRc-0"
-                                class="button button--flex button--small portfolio__button">
+                                class="button flex-button button--size-small portfolio__button">
                                 Demo<i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
@@ -431,7 +432,7 @@
                             <p class="portfolio__description">Arrhythmia detection based on ECG data
                                 using a deep neural network</p>
                             <a href="https://www.kaggle.com/code/shilonosovvladimir/ecg-arrhythmia-detection"
-                                class="button button--flex button--small portfolio__button">
+                                class="button flex-button button--size-small portfolio__button">
                                 Demo<i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
@@ -444,7 +445,7 @@
                             <h3 class="portfolio__title">Cool Project</h3>
                             <p class="portfolio__description">There will be something here soon</p>
                             <a href="https://vk.com/vladimirshil"
-                                class="button button--flex button--small portfolio__button">
+                                class="button flex-button button--size-small portfolio__button">
                                 Demo<i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
@@ -467,26 +468,31 @@
 
         <section class="contact section" id="contact">
             <h2 class="section__title">Contact Me</h2>
-            <span class="section__subtitle">Get ni touch</span>
+            <span class="section__subtitle">Get in touch</span>
 
             <div class="contact__container container grid">
                 <div>
-                    <div class="contact__information">
-                        <i class="uil uil-phone contact__icon"></i>
+                    <a href="tel:+79148909915">
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
 
-                        <div>
-                            <h3 class="contac__title">Call Me</h3>
-                            <span class="contact__subtitle">+79148909915</span>
+                            <div>
+                                <h3 class="contact__title">Call Me</h3>
+                                <span class="contact__subtitle">+79148909915</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact__information">
-                        <i class="uil uil-envelope contact__icon"></i>
+                    </a>
+                    <a href="mailto: vovanshil95@mail.ru">
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
 
-                        <div>
-                            <h3 class="contac__title">Email</h3>
-                            <span class="contact__subtitle">vovanshil95@mail.ru</span>
+                            <div>
+                                <h3 class="contac__title">Email</h3>
+                                <span class="contact__subtitle">vovanshil95@mail.ru</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+                    <a href="https://goo.gl/maps/7fQ8pqtBbXYBAWYE6">
                     <div class="contact__information">
                         <i class="uil uil-map-marker contact__icon"></i>
 
@@ -495,6 +501,7 @@
                             <span class="contact__subtitle">Russia - Saint Petersburg Av. Kronverkskiy #49</span>
                         </div>
                     </div>
+                    </a>
                 </div>
 
                 <form action="" class="contact__form grid">
@@ -510,11 +517,11 @@
                     </div>
                     <div class="contact__content">
                         <label for="" class="contact__label">Meassage</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <textarea cols="0" rows="7" class="contact__input"></textarea>
                     </div>
 
                     <div>
-                        <a href="#" class="button button--flex">
+                        <a class="button flex-button send-message__button">
                             Send Message
                             <i class="uil uil-message button__icon"></i>
                         </a>
@@ -562,12 +569,13 @@
             </div>
         </footer>
 
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup__icon"></i>
+        <a href="#" class="scrollup-button" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup-button__icon"></i>
         </a>
 
         <script src="assets/js/swiper-bundle.min.js"></script>
-
+        <script src="assets/js/navigation.js"></script>
+        <script src="assets/js/theme.js"></script>
         <script src="assets/js/main.js"></script>
 </body>
 
